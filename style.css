@@ -3,6 +3,8 @@ body {
   margin: 0 auto; /* ページ中央に配置 */
   max-width: 960px; /* 固定幅 */
   padding: 10px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 /* スマホ */
@@ -39,7 +41,7 @@ div.work > img.work {
 
 .fadeUp {
   animation-name: fadeUpAnime;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -59,7 +61,7 @@ div.work > img.work {
 
 .fadeLeft {
   animation-name: fadeLeftAnime;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
