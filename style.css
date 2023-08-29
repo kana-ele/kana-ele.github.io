@@ -1,0 +1,36 @@
+/* 通常のスタイル（パソコン向け） */
+body {
+  margin: 0 auto; /* ページ中央に配置 */
+  max-width: 960px; /* 固定幅 */
+  padding: 20px;
+}
+
+/* スマートフォン向けのスタイル */
+@media (max-width: 767px) {
+  body {
+    margin: 0;
+    max-width: 100%; /* 画面の全幅 */
+    padding: 10px; /* 必要に応じて調整 */
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+div.work {
+  display: flex;
+  margin: 1em 0;
+}
+
+div.work > div.text {
+  margin: 0 1em;
+}
+
+div.work > div.text > h3 {
+  margin: 0;
+}
+
+div.work > img.work {
+  height: 100px;
+}
