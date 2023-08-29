@@ -1,22 +1,21 @@
 const fadeAnime = () => {
   const offset = 100;
-  const scrollBottom = $(window).scrollTop() + $(window).height();
 
   $(".fadeUpTrigger").each(function () {
+    const windowHeight = $(window).height();
+    const scrollTop = $(window).scrollTop();
     const elemPos = $(this).offset().top;
-    if (scrollBottom >= elemPos + offset) {
+    if (windowHeight + scrollTop >= elemPos + offset) {
       $(this).addClass("fadeUp");
-    } else {
-      $(this).removeClass("fadeUp");
     }
   });
 
   $(".fadeLeftTrigger").each(function () {
+    const windowHeight = $(window).height();
+    const scrollTop = $(window).scrollTop();
     const elemPos = $(this).offset().top;
-    if (scrollBottom >= elemPos + offset) {
+    if (windowHeight + scrollTop >= elemPos + offset) {
       $(this).addClass("fadeLeft");
-    } else {
-      $(this).removeClass("fadeLeft");
     }
   });
 };
