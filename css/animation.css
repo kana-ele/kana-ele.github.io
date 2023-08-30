@@ -1,12 +1,12 @@
 /* フェードイン */
 .fadeIn {
-  animation-name: fadeInAnime;
+  animation-name: fadeIn-anime;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 
-@keyframes fadeInAnime {
+@keyframes fadeIn-anime {
   from {
     opacity: 0;
   }
@@ -17,14 +17,14 @@
 
 /* 下から */
 
-.fadeUp {
-  animation-name: fadeUpAnime;
+.fade-up {
+  animation-name: fade-up-anime;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 
-@keyframes fadeUpAnime {
+@keyframes fade-up-anime {
   from {
     opacity: 0;
     transform: translateY(100px);
@@ -37,14 +37,14 @@
 
 /* 左から */
 
-.fadeLeft {
-  animation-name: fadeLeftAnime;
+.fade-left {
+  animation-name: fade-left-anime;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 
-@keyframes fadeLeftAnime {
+@keyframes fade-left-anime {
   from {
     opacity: 0;
     transform: translateX(-100px);
@@ -55,8 +55,29 @@
   }
 }
 
-.fadeInTrigger,
-.fadeUpTrigger,
-.fadeLeftTrigger {
+/* 右から */
+
+.fade-right {
+  animation-name: fade-right-anime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fade-right-anime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-trigger,
+.fade-up-trigger,
+.fade-left-trigger,
+.fade-right-trigger {
   opacity: 0;
 }

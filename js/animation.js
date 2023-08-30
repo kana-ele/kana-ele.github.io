@@ -3,30 +3,39 @@ const fadeAnime = () => {
   const windowHeight = $(window).height();
   const scrollTop = $(window).scrollTop();
 
-  $(".fadeInTrigger").each(function () {
+  $(".fade-in-trigger").each(function () {
     const elemPos = $(this).offset().top;
     if (windowHeight + scrollTop > elemPos + offset) {
-      $(this).addClass("fadeIn");
+      $(this).addClass("fade-in");
     } else if (windowHeight + scrollTop < elemPos - offset) {
-      $(this).removeClass("fadeIn");
+      $(this).removeClass("fade-in");
     }
   });
 
-  $(".fadeUpTrigger").each(function () {
+  $(".fade-up-trigger").each(function () {
     const elemPos = $(this).offset().top;
     if (windowHeight + scrollTop > elemPos + offset) {
-      $(this).addClass("fadeUp");
+      $(this).addClass("fade-up");
     } else if (windowHeight + scrollTop < elemPos - offset) {
-      $(this).removeClass("fadeUp");
+      $(this).removeClass("fade-up");
     }
   });
 
-  $(".fadeLeftTrigger").each(function () {
+  $(".fade-left-trigger").each(function () {
     const elemPos = $(this).offset().top;
     if (windowHeight + scrollTop > elemPos + offset) {
-      $(this).addClass("fadeLeft");
+      $(this).addClass("fade-left");
     } else if (windowHeight + scrollTop < elemPos - offset) {
-      $(this).removeClass("fadeLeft");
+      $(this).removeClass("fade-left");
+    }
+  });
+
+  $(".fade-right-trigger").each(function () {
+    const elemPos = $(this).offset().top;
+    if (windowHeight + scrollTop > elemPos + offset) {
+      $(this).addClass("fade-right");
+    } else if (windowHeight + scrollTop < elemPos - offset) {
+      $(this).removeClass("fade-right");
     }
   });
 };
