@@ -48,6 +48,14 @@ h2 {
 .card-link-img {
   display: block;
   height: 40px;
+  border-radius: 20px;
+  border: solid 1px #333;
+  transition: all 0.2s ease;
+  background-color: rgb(240, 240, 240);
+}
+
+.card-link-img:hover {
+  border-color: transparent;
 }
 
 /* 下から */
