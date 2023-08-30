@@ -1,7 +1,16 @@
 const fadeAnime = () => {
-  const offset = 100;
+  const offset = 50;
   const windowHeight = $(window).height();
   const scrollTop = $(window).scrollTop();
+
+  $(".fadeInTrigger").each(function () {
+    const elemPos = $(this).offset().top;
+    if (windowHeight + scrollTop > elemPos + offset) {
+      $(this).addClass("fadeIn");
+    } else if (windowHeight + scrollTop < elemPos - offset) {
+      $(this).removeClass("fadeIn");
+    }
+  });
 
   $(".fadeUpTrigger").each(function () {
     const elemPos = $(this).offset().top;
